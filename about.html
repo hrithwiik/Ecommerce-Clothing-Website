@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        body {
+            margin: 0px;
+            font-family: Arial;
+            /* font-size: 17px; */
+
+        }
+
+        ::selection {
+            color: #000;
+            background: #fff;
+        }
+
+        nav {
+            /* position: fixed; */
+            background: #1b1b1b;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 12;
+        }
+
+        nav .menu {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .menu .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        .menu ul {
+            display: inline-flex;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin-left: 7px;
+        }
+
+        .menu ul li:first-child {
+            margin-left: 0px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            background: #fff;
+            color: black;
+        }
+
+        .about-us {
+            width: 100vw;
+            height: 90vh;
+            background-color: hsl(0, 0%, 100%);
+            /* background: url("/image/pexels-lum3n-44775-316466.jpg") no-repeat; */
+            background: url("/signupblur.jpg") no-repeat;
+
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            filter: blur(0px);
+            padding:10px 0px;
+        }
+
+        .about-us h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 50px;
+            color: #ffffff;
+        }
+
+        .flex-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+       
+        }
+
+        .box {
+            width: 30%;
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+                 /* border-radius: 30px; */
+                 background-color: #1b1b1b;
+
+        }
+
+        .box h2 {
+            margin-top: 0;
+            font-size: 40px;
+            color: #ffffff;
+        }
+
+        .box p {
+            margin-bottom: 0;
+            color: #ffffff;
+        }
+
+        footer {
+            width: 100vw;
+            height: 10vh;
+            background-color: #000000;
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        .created-by {
+            text-align: center;
+        }
+
+
+        .created-by p {
+            padding:0px 0px 0px 0px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Louis Vuitton</a>
+            </div>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="men.html" target="_blank">Men</a></li>
+                <li><a href="women.html" target="_blank">Women</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="SignUpandLogin.html" target="_blank">Signup/Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="about-us">
+        <div class="container">
+            <h1>About Us</h1>
+            <div class="flex-boxes">
+                <div class="box">
+                    <h2>Iconic Trunks</h2>
+                    <p>Founded in 1854 by Louis Vuitton, the brand began with innovative, lightweight trunks designed for travel.</p>
+                </div>
+                <div class="box">
+                    <h2>Craftsmanship</h2>
+                    <p> Renowned for meticulous craftsmanship and high-quality materials, Louis Vuitton continues this tradition today.</p>
+                </div>
+                <div class="box">
+                    <h2>Luxury Leather Goods</h2>
+                    <p>From their signature monogram canvas to luxurious leathers, Louis Vuitton is known for timeless and elegant handbags, luggage, and accessories.</p>
+                </div>
+            </div>
+            <div class="flex-boxes">
+                <div class="box">
+                    <h2>Fashion House Expansion</h2>
+                    <p>Over time, Louis Vuitton expanded into ready-to-wear clothing, shoes, jewelry, and fragrances.</p>
+                </div>
+                <div class="box">
+                    <h2>Artistic Collaborations</h2>
+                    <p>  The brand is known for collaborating with renowned artists and designers on unique collections.</p>
+                </div>
+                <div class="box">
+                    <h2>Luxury Status Symbol</h2>
+                    <p> Louis Vuitton has become a global symbol of luxury, travel, and fashion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="created-by">
+                <p><span>Created by : </span> </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

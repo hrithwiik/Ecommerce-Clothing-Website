@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>men</title>
+<style>
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        body {
+            margin: 0px;
+            font-family: Arial;
+            font-size: 17px;
+
+        }
+
+        ::selection {
+            color: #000;
+            background: #fff;
+        }
+
+        nav {
+            /* position: fixed; */
+            background: #1b1b1b;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 12;
+        }
+
+        nav .menu {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .menu .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        .menu ul {
+            display: inline-flex;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin-left: 7px;
+        }
+
+        .menu ul li:first-child {
+            margin-left: 0px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            background: #fff;
+            color: black;
+        }
+
+        .slide-main {
+          margin-top: 80px;
+      width: 100vw;
+      height: 50vh;
+      background-color: rgb(199, 185, 59);
+      background: url("/home.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      filter: blur(0px); 
+    }  
+
+    .slider-heading {
+      padding-top: 8px;
+      font-size: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    .slideshow {
+      width: 100vw;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+
+    }
+
+    .slide {
+      width: 100vw;
+      height: 100vw;
+      position: absolute;
+      animation: slideShow 12s infinite;
+      opacity: 0;
+    }
+
+    .slide:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .slide:nth-child(2) {
+      animation-delay: 4s;
+    }
+
+    .slide:nth-child(3) {
+      animation-delay: 8s;
+    }
+
+    @keyframes slideShow {
+      0% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+
+      10% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      33% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      43% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+    }
+
+    .slide p {
+      font-size: 25px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .slide span {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    footer {
+            width: 100vw;
+            height: 10vh;
+            background-color: #000000;
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        .created-by {
+            text-align: center;
+        }
+
+
+        .created-by p {
+            padding:0px 0px 0px 0px;
+            font-size: 25px;
+        }
+</style>
+  <link rel="stylesheet" href="addtocardv2-main/style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Louis Vuitton</a>
+      </div>
+      <ul>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="men.html" target="_blank">Men</a></li>
+        <li><a href="women.html" target="_blank">Women</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <li><a href="SignUpandLogin.html" target="_blank">Signup/Login</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+
+  <div class="container">
+    <header>
+      <h1>Men Clothing</h1>
+      <div class="shopping">
+        <img src="image/shopping.svg">
+        <span class="quantity">0</span>
+      </div>
+    </header>
+
+    <div class="list">
+
+    </div>
+  </div>
+  <div class="card">
+    <h1>Card</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+    </div>
+  </div>
+
+  <section class="slide-main">
+    <div class="slider-heading">
+      <h1>Customer Reviews</h1>
+    </div>
+    <div class="slideshow">
+      <div class="slide">
+        <p>"I recently purchased a Neverfull cloth and I'm obsessed! The craftsmanship is amazing and it goes with
+          everything in my wardrobe. "</p>
+        <span>- John Doe</span>
+      </div>
+      <div class="slide">
+        <p>"I've been a loyal Louis Vuitton customer for over 10 years."</p>
+        <span>- Jane Doe</span>
+      </div>
+      <div class="slide">
+        <p>"LV's designs are always so creative and fashion-forward. I recently bought a silk dress with a stunning
+          print, but the sizing runs a bit small."</p>
+        <span>- Bob Smith</span>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+        <div class="created-by">
+            <p><span>Created by : </span> </p>
+        </div>
+    </div>
+</footer>
+ 
+
+  <script src="men.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        body {
+            margin: 0px;
+            font-family: Arial;
+            /* font-size: 17px; */
+
+        }
+
+        ::selection {
+            color: #000;
+            background: #fff;
+        }
+
+        nav {
+            /* position: fixed; */
+            background: #1b1b1b;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 12;
+        }
+
+        nav .menu {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .menu .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        .menu ul {
+            display: inline-flex;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin-left: 7px;
+        }
+
+        .menu ul li:first-child {
+            margin-left: 0px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            background: #fff;
+            color: black;
+        }
+
+        header {
+            min-height: 85vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: url("signupblur.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            filter: blur(0px);
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        /* * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        } */
+
+        /* body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px;
+            background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+        } */
+
+        .container {
+            /* max-width: 800px; */
+            background: #fff;
+            /* width: 800px; */
+            padding: 25px 40px 10px 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            /* border-radius: 20px; */
+        }
+
+        .container .text {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            text-decoration: underline;
+            background-color: #000000;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container form {
+            padding: 30px 0 0 0;
+        }
+
+        .container form .form-row {
+            display: flex;
+            margin: 32px 0;
+        }
+
+        form .form-row .input-data {
+            width: 100%;
+            height: 40px;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        form .form-row .textarea {
+            height: 70px;
+        }
+
+        .input-data input,
+        .textarea textarea {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .input-data input:focus~label,
+        .textarea textarea:focus~label,
+        .input-data input:valid~label,
+        .textarea textarea:valid~label {
+            transform: translateY(-20px);
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .textarea textarea {
+            resize: none;
+            padding-top: 10px;
+        }
+
+        .input-data label {
+            position: absolute;
+            pointer-events: none;
+            bottom: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .textarea label {
+            width: 100%;
+            bottom: 40px;
+            background: #fff;
+        }
+
+        .input-data .underline {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+        }
+
+        .input-data .underline:before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: #000000;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+
+        .input-data input:focus~.underline:before,
+        .input-data input:valid~.underline:before,
+        .textarea textarea:focus~.underline:before,
+        .textarea textarea:valid~.underline:before {
+            transform: scale(1);
+        }
+
+        .submit-btn .input-data {
+            overflow: hidden;
+            height: 45px !important;
+            width: 25% !important;
+        }
+
+        .submit-btn .input-data .inner {
+            height: 100%;
+            width: 300%;
+            position: absolute;
+            left: -100%;
+        background-color: black;
+            transition: all 0.4s;
+        }
+
+        .submit-btn .input-data:hover .inner {
+            left: 0;
+        }
+
+        .submit-btn .input-data input {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 700px) {
+            .container .text {
+                font-size: 30px;
+            }
+
+            .container form {
+                padding: 10px 0 0 0;
+            }
+
+            .container form .form-row {
+                display: block;
+            }
+
+            form .form-row .input-data {
+                margin: 35px 0 !important;
+            }
+
+            .submit-btn .input-data {
+                width: 40% !important;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Louis Vuitton</a>
+            </div>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="men.html" target="_blank">Men</a></li>
+                <li><a href="women.html" target="_blank">Women</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="SignUpandLogin.html" target="_blank">Signup/Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="text">Responsive Contact us Form</div>
+            <form action="#">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">First Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Last Name</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Email Address</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Website Name</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="">Write your message</label>
+                        <br />
+                        <div class="form-row submit-btn">
+                            <div class="input-data">
+                                <div class="inner"></div>
+                                <input type="submit" value="submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>

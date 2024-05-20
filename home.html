@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="addtocardv2-main/style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Louis Vuitton</a>
+      </div>
+      <ul>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="men.html" target="_blank">Men</a></li>
+        <li><a href="women.html" target="_blank">Women</a></li>
+        
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <li><a href="SignUpandLogin.html" target="_blank">Signup/Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Create Amazing Website</div>
+    <div class="sub_title">Pure HTML & CSS Only</div>
+    <div class="btns">
+      <button onclick="window.open('women.html', '_blank')" >Women</button>
+      <button onclick="window.open('men.html', '_blank')">Men</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>New Arrival</h1>
+      <div class="shopping">
+        <img src="image/shopping.svg">
+        <span class="quantity">0</span>
+      </div>
+    </header>
+
+    <div class="list">
+
+    </div>
+  </div>
+  <div class="card">
+    <h1>Card</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+    </div>
+  </div>
+  <div class="Coming">
+    <div class="container1">
+      <img src="/image/homecoming.jpg" alt="" class="image" />
+      <header>Summer Coming Soon</header>
+      <p>
+        "Travel with Style"
+      </p>
+      <div class="time-content">
+        <div class="time days">
+          <span class="number"></span>
+          <span class="text">days</span>
+        </div>
+        <div class="time hours">
+          <span class="number"></span>
+          <span class="text">hours</span>
+        </div>
+        <div class="time minutes">
+          <span class="number"></span>
+          <span class="text">minutes</span>
+        </div>
+        <div class="time seconds">
+          <span class="number"></span>
+          <span class="text">seconds</span>
+        </div>
+      </div>
+
+      <div class="email-content">
+        <p><b>SignUp now to get the latest updates!</b></p>
+
+        <!-- <div class="input-box">
+          <input type="email" placeholder="Enter your email" />
+          <button>Notify Me</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+ <section class="about-us">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Since 1854, Louis Vuitton has journeyed from visionary trunks to a luxury icon. Our heritage of meticulous craftsmanship lives on in every stitch of our leather goods, ready-to-wear, and accessories. Innovation meets Parisian elegance in our designs, ensuring timeless style. We are committed to using the finest materials and pushing creative boundaries. Explore the world of Louis Vuitton and discover the art of living with enduring legacy and a touch of luxury.</p>
+      <div class="data">
+        <a href="about.html" target="_blank" class="hire">More</a>
+        </div>
+    </div>
+ </section>
+
+ <footer>
+  <div class="container">
+      <div class="created-by">
+          <p><span>Created by : </span> </p>
+      </div>
+  </div>
+</footer>
+  <script src="app.js"></script>
+  <script>
+    const seconds = document.querySelector(".seconds .number"),
+      minutes = document.querySelector(".minutes .number"),
+      hours = document.querySelector(".hours .number"),
+      days = document.querySelector(".days .number");
+
+    let secValue = 11,
+      minValue = 2,
+      hourValue = 2,
+      dayValue = 9;
+
+    const timeFunction = setInterval(() => {
+      secValue--;
+
+      if (secValue === 0) {
+        minValue--;
+        secValue = 60;
+      }
+      if (minValue === 0) {
+        hourValue--;
+        minValue = 60;
+      }
+      if (hourValue === 0) {
+        dayValue--;
+        hourValue = 24;
+      }
+
+      if (dayValue === 0) {
+        clearInterval(timeFunction);
+      }
+      seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
+      minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
+      hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
+      days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
+    }, 1000); //1000ms = 1s
+
+  </script>
+</body>
+
+</html>
